@@ -70,6 +70,7 @@ public class ExportController {
             int x= 1;
             for (Facture facture : listFacture) {
                 Sheet sheet = workbook.createSheet("Facture de " + client.getNom()+ x );
+                // Sheet sheet = workbook.createSheet("Facture de " + client.getNom() + facture.getId());
 
                 Set<LigneFacture> lignes = facture.getLigne();
                 int i = 0;
